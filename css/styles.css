@@ -1,0 +1,108 @@
+
+
+/** Gobals **/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.75rem;
+  padding: 4rem 0;
+}
+
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+
+.btn{
+  display: block;
+  padding: 1rem 3rem;
+  background-color: #49A078;
+  border-radius: 50vw;
+  font-weight: bold;
+  font-size: var(--fs-btn);
+  font-family: var(--ff-secondary);
+  text-align: center;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:hover, .btn:focus{
+  background-color: #327053;
+}
+
+.btn-container{
+  margin-top: 2rem;
+}
+
+.btn-container.home{
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .btn{
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /*Font sizes*/
+    --fs-h1: 5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 2.5rem;
+    --fs-body: 2rem;
+    --fs-btn: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    /*Font sizes*/
+    --fs-h1: 6rem;
+    --fs-h2: 5rem;
+    --fs-h3: 2.5rem;
+    --fs-pts: 4rem;
+    --fs-body: 2rem;
+  }
+}
+
